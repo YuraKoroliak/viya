@@ -671,6 +671,12 @@
     border-radius: 13px;
 }
 
+.volunter__info.edit .user__region .brigade.military {
+    font-size: 13px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.4);
+}
+
 .user__profile {
     margin-top: 5px;
     font-size: 17px;
