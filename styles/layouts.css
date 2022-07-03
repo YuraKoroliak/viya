@@ -1,0 +1,54 @@
+.container {
+    margin: 0 auto;
+    width: 1160px;
+}
+
+.header {
+    margin: 40px 0 33px;
+}
+
+.header__logo {
+    cursor: pointer;
+
+    display: block;
+
+    margin-left: -100px;
+
+    text-decoration: none;
+    color: #000;
+}
+
+.header__logo .logo__img {
+    height: 61px;
+    width: 61px;
+}
+
+.header__logo .logo__content {
+    margin-left: 39px;
+    font-size: 61px;
+
+    font-weight: medium;
+}
+
+.header>* {
+    height: 55px;
+}
+
+.profile {
+    margin-left: 35px;
+}
+
+.profile__button {
+    width: 44px;
+    height: 44px;
+
+    padding: 8px;
+    border-radius: 50%;
+
+    background-color: #000;
+}
+
+.profile__button i {
+    font-size: 27px;
+    color: #fff;
+}
