@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
 
     <title>Viya</title>
 
@@ -18,8 +18,8 @@
     <div class="container">
         <header class="header d-flex justify-content-between align-items-center">
             <div class="header__info d-flex align-items-center">
-                <a href="index.html" class="header__logo d-flex align-items-center">
-                    <img src="./images/ua_flag.png" class="logo__img">
+                <a href="../index.html" class="header__logo d-flex align-items-center">
+                    <img src="../images/ua_flag.png" class="logo__img">
                     <div class="logo__content">
                         VIYA
                     </div>
@@ -34,7 +34,8 @@
             <div class="header__info d-flex align-items-center">
                 <div class="buttons_toggle d-flex align-items-center">
                     <button type="button" class="buttons_toggle__item">Волонтери</button><button type="button"
-                        class="buttons_toggle__item active">Головна</button>
+                        class="buttons_toggle__item active">Головна</button><button type="button"
+                        class="buttons_toggle__item" style="padding: 12px 5px">Нове оголошення</button>
                 </div>
 
                 <div class="profile d-flex align-items-center">
@@ -54,57 +55,65 @@
 
             <section class="d-flex justify-content-between">
                 <nav class="navigation">
-                    <a class="navigation__item d-flex justify-content-between align-items-center shadow active">
-                        Головна
-                        <img src="./images/icons/house.png" class="navigation__icon">
-                    </a>
-                    <a href="./pages/zsu.html"
+                    <a href="../index.html"
                         class="navigation__item d-flex justify-content-between align-items-center shadow">
-                        ЗСУ
-                        <img src="./images/icons/helmet.png" class="navigation__icon">
+                        Головна
+                        <img src="../images/icons/house.png" class="navigation__icon">
                     </a>
-                    <a href="index.html"
+                    <a href="zsu.html"
+                        class="navigation__item d-flex justify-content-between align-items-center shadow active">
+                        ЗСУ
+                        <img src="../images/icons/helmet.png" class="navigation__icon">
+                    </a>
+                    <a href="../index.html"
                         class="navigation__item d-flex justify-content-between align-items-center shadow">
                         Транспорт
-                        <img src="./images/icons/car.png" class="navigation__icon">
+                        <img src="../images/icons/car.png" class="navigation__icon">
                     </a>
-                    <a href="index.html"
+                    <a href="../index.html"
                         class="navigation__item d-flex justify-content-between align-items-center shadow">
                         Намети
-                        <img src="./images/icons/tent.png" class="navigation__icon">
+                        <img src="../images/icons/tent.png" class="navigation__icon">
                     </a>
-                    <a href="index.html"
+                    <a href="../index.html"
                         class="navigation__item d-flex justify-content-between align-items-center shadow">
                         Їжа
-                        <img src="./images/icons/soup.png" class="navigation__icon">
+                        <img src="../images/icons/soup.png" class="navigation__icon">
                     </a>
-                    <a href="index.html"
+                    <a href="../index.html"
                         class="navigation__item d-flex justify-content-between align-items-center shadow">
                         Медикаменти
-                        <img src="./images/icons/pill.png" class="navigation__icon">
+                        <img src="../images/icons/pill.png" class="navigation__icon">
                     </a>
-                    <a href="index.html"
+                    <a href="../index.html"
                         class="navigation__item d-flex justify-content-between align-items-center shadow">
                         Техніка
-                        <img src="./images/icons/notebook.png" class="navigation__icon">
+                        <img src="../images/icons/notebook.png" class="navigation__icon">
                     </a>
                 </nav>
                 <div class="page__content">
-                    <h2 class="page__title">Головна</h2>
+                    <h2 class="page__title">ЗСУ</h2>
 
-                    <p class="page__filter">топ теги</p>
+                    <p class="page__filter">топ оберіть категорію</p>
 
                     <div class="filters d-flex align-items-center">
-                        <button type="button" class="filters__item">Шоломи</button>
-                        <button type="button" class="filters__item">Аптечка</button>
-                        <button type="button" class="filters__item">Наплічники</button>
-                        <button type="button" class="filters__item">Павербанки</button>
-                        <button type="button" class="filters__item">Ліхтарики</button>
-                        <button type="button" class="filters__item">ІРХ</button>
+                        <label for="category__field">
+                            <input type="text" class="category__field" id="category__field"
+                                placeholder="№ військової частини">
+                        </label>
+                        <button type="button" class="filters__item icon">Шоломи <i
+                                class="fa-solid fa-xmark"></i></button>
+                        <button type="button" class="filters__item icon">Бронежелети <i
+                                class="fa-solid fa-xmark"></i></button>
+                        <button type="button" class="filters__item icon">Наплічники <i
+                                class="fa-solid fa-xmark"></i></button>
+                        <button type="button" class="filters__item icon">ІРХ <i class="fa-solid fa-xmark"></i></button>
+
+                        <button type="button" class="button button_dark">Очистити</button>
                     </div>
 
                     <div class="products">
-                        <div class="products__item helmet d-flex justify-content-between">
+                        <a href="./product.html" class="products__item helmet d-flex justify-content-between">
                             <div class="favourite d-flex justify-content-center align-items-center">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
@@ -117,8 +126,8 @@
                                     20 шоломів на 65 бригаду
                                 </p>
                             </div>
-                        </div>
-                        <div class="products__item armor d-flex justify-content-between">
+                        </a>
+                        <a class="products__item armor d-flex justify-content-between">
                             <div class="favourite d-flex justify-content-center align-items-center">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
@@ -131,8 +140,8 @@
                                     20 шоломів на 65 бригаду
                                 </p>
                             </div>
-                        </div>
-                        <div class="products__item medicine d-flex justify-content-between">
+                        </a>
+                        <a class="products__item medicine d-flex justify-content-between">
                             <div class="favourite d-flex justify-content-center align-items-center">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
@@ -145,8 +154,8 @@
                                     5 аптечок на 33 бригаду
                                 </p>
                             </div>
-                        </div>
-                        <div class="products__item helmet_2 d-flex justify-content-between">
+                        </a>
+                        <a class="products__item helmet_2 d-flex justify-content-between">
                             <div class="favourite d-flex justify-content-center align-items-center">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
@@ -159,8 +168,8 @@
                                     20 шоломів на 65 бригаду
                                 </p>
                             </div>
-                        </div>
-                        <div class="products__item armor_2 d-flex justify-content-between">
+                        </a>
+                        <a class="products__item armor_2 d-flex justify-content-between">
                             <div class="favourite d-flex justify-content-center align-items-center">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
@@ -173,8 +182,8 @@
                                     20 шоломів на 65 бригаду
                                 </p>
                             </div>
-                        </div>
-                        <div class="products__item helmet_2 d-flex justify-content-between">
+                        </a>
+                        <a class="products__item helmet_2 d-flex justify-content-between">
                             <div class="favourite d-flex justify-content-center align-items-center">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
@@ -187,8 +196,8 @@
                                     20 шоломів на 65 бригаду
                                 </p>
                             </div>
-                        </div>
-                        <div class="products__item backpack d-flex justify-content-between">
+                        </a>
+                        <a class="products__item backpack d-flex justify-content-between">
                             <div class="favourite d-flex justify-content-center align-items-center">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
@@ -201,8 +210,8 @@
                                     3 наплічники
                                 </p>
                             </div>
-                        </div>
-                        <div class="products__item armor d-flex justify-content-between">
+                        </a>
+                        <a class="products__item armor d-flex justify-content-between">
                             <div class="favourite d-flex justify-content-center align-items-center">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
@@ -215,8 +224,8 @@
                                     20 шоломів на 65 бригаду
                                 </p>
                             </div>
-                        </div>
-                        <div class="products__item backpack d-flex justify-content-between">
+                        </a>
+                        <a class="products__item backpack d-flex justify-content-between">
                             <div class="favourite d-flex justify-content-center align-items-center">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
@@ -229,8 +238,8 @@
                                     3 наплічники
                                 </p>
                             </div>
-                        </div>
-                        <div class="products__item helmet d-flex justify-content-between">
+                        </a>
+                        <a class="products__item helmet d-flex justify-content-between">
                             <div class="favourite d-flex justify-content-center align-items-center">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
@@ -243,8 +252,8 @@
                                     20 шоломів на 65 бригаду
                                 </p>
                             </div>
-                        </div>
-                        <div class="products__item armor_2 d-flex justify-content-between">
+                        </a>
+                        <a class="products__item armor_2 d-flex justify-content-between">
                             <div class="favourite d-flex justify-content-center align-items-center">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
@@ -257,8 +266,8 @@
                                     20 шоломів на 65 бригаду
                                 </p>
                             </div>
-                        </div>
-                        <div class="products__item medicine d-flex justify-content-between">
+                        </a>
+                        <a class="products__item medicine d-flex justify-content-between">
                             <div class="favourite d-flex justify-content-center align-items-center">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
@@ -271,8 +280,8 @@
                                     5 аптечок на 33 бригаду
                                 </p>
                             </div>
-                        </div>
-                        <div class="products__item armor_2 d-flex justify-content-between">
+                        </a>
+                        <a class="products__item armor_2 d-flex justify-content-between">
                             <div class="favourite d-flex justify-content-center align-items-center">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
@@ -285,8 +294,8 @@
                                     20 шоломів на 65 бригаду
                                 </p>
                             </div>
-                        </div>
-                        <div class="products__item helmet_2 d-flex justify-content-between">
+                        </a>
+                        <a class="products__item helmet_2 d-flex justify-content-between">
                             <div class="favourite d-flex justify-content-center align-items-center">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
@@ -299,8 +308,8 @@
                                     20 шоломів на 65 бригаду
                                 </p>
                             </div>
-                        </div>
-                        <div class="products__item backpack d-flex justify-content-between">
+                        </a>
+                        <a class="products__item backpack d-flex justify-content-between">
                             <div class="favourite d-flex justify-content-center align-items-center">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
@@ -313,8 +322,8 @@
                                     3 наплічники
                                 </p>
                             </div>
-                        </div>
-                        <div class="products__item armor d-flex justify-content-between">
+                        </a>
+                        <a class="products__item armor d-flex justify-content-between">
                             <div class="favourite d-flex justify-content-center align-items-center">
                                 <i class="fa-regular fa-heart"></i>
                             </div>
@@ -327,7 +336,7 @@
                                     20 шоломів на 65 бригаду
                                 </p>
                             </div>
-                        </div>
+                        </a>
                     </div>
 
                     <div class="pagination d-flex justify-content-between align-items-center">
@@ -363,8 +372,8 @@
 
     <footer class="footer">
         <div class="container d-flex justify-content-between align-items-center">
-            <a href="index.html" class="header__logo dark d-flex align-items-center">
-                <img src="./images/ua_flag.png" class="logo__img">
+            <a href="../index.html" class="header__logo dark d-flex align-items-center">
+                <img src="../images/ua_flag.png" class="logo__img">
                 <div class="logo__content">
                     VIYA
                 </div>

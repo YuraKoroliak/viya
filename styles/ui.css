@@ -19,7 +19,6 @@
 
 .search .search__field::placeholder {
     font-size: 15px;
-    font-style: italic;
 }
 
 .search .search__field:focus {
@@ -149,13 +148,24 @@
     border-radius: 13px;
 }
 
+.filters__item.icon {
+    padding: 13px;
+}
+
+.filters__item i {
+    cursor: pointer;
+
+    margin-left: 13px;
+    color: #717171;
+}
+
 .filters__item:not(:last-of-type) {
     margin-right: 15px;
 }
 
 
 .products {
-    margin-top: 72px;
+    margin-top: 42px;
 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -299,4 +309,33 @@
 
 .shadow {
     box-shadow: inset 0 0 18px -8px rgba(0, 0, 0, 0.04), 0 13px 15px -4px rgba(0, 0, 0, 0.09);
+}
+
+/* ZCU */
+
+.category__field {
+    margin-right: 10px;
+    padding: 13px;
+
+    background-color: var(--light-grey);
+    border: none;
+    border-radius: 13px;
+}
+
+.button {
+    cursor: pointer;
+
+    min-width: 105px;
+
+    padding: 12px 19px;
+
+    border-radius: 13px;
+
+    background-color: #fff;
+    color: #000;
+}
+
+.button_dark {
+    background-color: #000;
+    color: #fff;
 }
