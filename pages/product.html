@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <title>Viya</title>
+
+    <script src="https://kit.fontawesome.com/5953287ccc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header d-flex justify-content-between align-items-center">
+            <div class="header__info d-flex align-items-center">
+                <a href="../index.html" class="header__logo d-flex align-items-center">
+                    <img src="../images/ua_flag.png" class="logo__img">
+                    <div class="logo__content">
+                        VIYA
+                    </div>
+                </a>
+
+                <label class="search d-flex align-items-center" for="search">
+                    <input type="text" class="search__field" placeholder="Пошук по товарам" id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+            </div>
+
+            <div class="header__info d-flex align-items-center">
+                <div class="buttons_toggle d-flex align-items-center">
+                    <button type="button" class="buttons_toggle__item">Волонтери</button><button type="button"
+                        class="buttons_toggle__item active">Головна</button>
+                </div>
+
+                <div class="profile d-flex align-items-center">
+                    <button type="button" class="profile__button d-flex justify-content-center align-items-center">
+                        <i class=" fa-regular fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="history d-flex align-items-center">
+                <button type="button" class="button button_dark">Назад</button>
+                <p class="path">головна <span>></span> ЗСУ <span>></span> шоломи</p>
+            </section>
+
+            <section class="d-flex justify-content-between">
+                <div class="product__wrapper">
+                    <div class="product__image d-flex justify-content-between align-items-center shadow_drop">
+                        <div class="arrow-left arrow d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div class="pictures__indicators d-flex justify-content-between align-items-center">
+                            <div class="indicator active"></div>
+                            <div class="indicator"></div>
+                            <div class="indicator"></div>
+                            <div class="indicator"></div>
+                        </div>
+                        <div class="arrow-right arrow d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                    <div class="product__fullinfo border_light shadow">
+                        <div class="product__date">опубліковано 06.07.2022</div>
+                        <div
+                            class="favourite favourite_big favourite_dark d-flex justify-content-center align-items-center">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+
+                        <h2 class="product__title">
+                            20 шоломів на 65 бригаду
+                        </h2>
+
+                        <div class="buttons">
+                            <button type="button" class="button button_dark">допомогти</button><button type="button"
+                                class="button button_dark">зателефонувати</button>
+                        </div>
+
+                        <div class="product__description">
+                            <p class="title">опис</p>
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,lpa
+                                qui
+                                officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="user__block">
+                    <div class="user_info border_light shadow">
+                        <div class="block__title">
+                            Автор
+                        </div>
+                        <div class="user__avatar"></div>
+                        <div class="user__name">Короляк Юрій</div>
+                        <div class="user__profile">Профіль: медик ЗСУ</div>
+                        <div class="user__region d-flex align-items-center">
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i> М. Львів
+                            </div>
+                            <div class="partition"></div>
+                            <div class="brigade">
+                                Бригада: 65
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="user__contacts border_light shadow">
+                        <div class="block__title">
+                            Контактна інформація
+                        </div>
+                        <div class="contact">
+                            <div class="contact__name">телефон</div>
+                            <div class="contact__content">+380 (96) 611 90 70</div>
+                        </div>
+                        <div class="contact">
+                            <div class="contact__name">email</div>
+                            <div class="contact__content">viya2022@gmail.com</div>
+                        </div>
+                    </div>
+
+                    <div class="user__location border_light shadow">
+                        <div class="block__title">
+                            локація
+                        </div>
+
+                        <div class="user__address">
+                            Вул. Замарстинівська 83А
+                        </div>
+                        <div class="user__address_description">
+                            Ценр допомоги
+                        </div>
+
+                        <div class="map"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="recommended__title">оголошення від автора</h2>
+                <div class="recommended_products">
+                    <a class="products__item armor_2 d-flex justify-content-between">
+                        <div class="favourite d-flex justify-content-center align-items-center">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+
+                        <div class="product__info">
+                            <p class="product__title">
+                                Короляк Юрік
+                            </p>
+                            <p class="product__description">
+                                20 шоломів на 65 бригаду
+                            </p>
+                        </div>
+                    </a>
+                    <a class="products__item helmet_2 d-flex justify-content-between">
+                        <div class="favourite d-flex justify-content-center align-items-center">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+
+                        <div class="product__info">
+                            <p class="product__title">
+                                Короляк Юрік
+                            </p>
+                            <p class="product__description">
+                                20 шоломів на 65 бригаду
+                            </p>
+                        </div>
+                    </a>
+                    <a class="products__item helmet d-flex justify-content-between">
+                        <div class="favourite d-flex justify-content-center align-items-center">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+
+                        <div class="product__info">
+                            <p class="product__title">
+                                Короляк Юрік
+                            </p>
+                            <p class="product__description">
+                                5 аптечок на 33 бригаду
+                            </p>
+                        </div>
+                    </a>
+                    <a class="products__item armor d-flex justify-content-between">
+                        <div class="favourite d-flex justify-content-center align-items-center">
+                            <i class="fa-regular fa-heart"></i>
+                        </div>
+
+                        <div class="product__info">
+                            <p class="product__title">
+                                Короляк Юрік
+                            </p>
+                            <p class="product__description">
+                                20 шоломів на 65 бригаду
+                            </p>
+                        </div>
+                    </a>
+                    <a class="products__item empty d-flex justify-content-center shadow_drop">
+                        <div class="show_more">Показати більше</div>
+                        <span>+3 товари</span>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="../index.html" class="header__logo dark d-flex align-items-center">
+                <img src="../images/ua_flag.png" class="logo__img">
+                <div class="logo__content">
+                    VIYA
+                </div>
+            </a>
+
+            <div class="footer__info">
+                <p>Умови користування сайтом</p>
+                <p>Як розмістити оголошення</p>
+                <p>Як допомогти?</p>
+            </div>
+            <div class="footer__info">
+                <p>Політика конфіденціальності</p>
+                <p>Правила безпеки</p>
+                <p>Мій профіль</p>
+            </div>
+
+            <button type="button"
+                class="button button_light d-flex justify-content-between align-items-center">Допомогти <i
+                    class="fa-solid fa-phone"></i></button>
+        </div>
+        <div class="copyright">
+            © VIYA. ALL RIGHT RESERVED.
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -191,7 +191,7 @@
     z-index: 1;
 }
 
-.products__item:before {
+.products__item:not(.empty):before {
     content: '';
     position: absolute;
     top: 0;
@@ -205,7 +205,7 @@
     z-index: 0;
 }
 
-.products__item:after {
+.products__item:not(.empty):after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -217,6 +217,22 @@
 
     background: linear-gradient(transparent, #000);
     z-index: 0;
+}
+
+.products__item.empty {
+    border: 1px solid rgba(0, 0, 0, .04);
+    text-align: center;
+}
+
+.products__item.empty .show_more {
+    margin-bottom: 7px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.products__item.empty>span {
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.4);
 }
 
 .products__item.helmet {
@@ -260,6 +276,20 @@
 
 .favourite i {
     font-size: 14px;
+}
+
+.favourite.favourite_big {
+    width: 39px;
+    height: 39px;
+}
+
+.favourite.favourite_big i {
+    font-size: 19px;
+}
+
+.favourite.favourite_dark {
+    background-color: #000;
+    color: #fff;
 }
 
 .product__info {
@@ -311,6 +341,10 @@
     box-shadow: inset 0 0 18px -8px rgba(0, 0, 0, 0.04), 0 13px 15px -4px rgba(0, 0, 0, 0.09);
 }
 
+.shadow_drop {
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .25);
+}
+
 /* ZCU */
 
 .category__field {
@@ -338,4 +372,288 @@
 .button_dark {
     background-color: #000;
     color: #fff;
+}
+
+/* Product */
+
+.history {
+    margin-bottom: 33px;
+}
+
+.history .path {
+    margin-left: 23px;
+
+    font-size: 15px;
+    font-style: italic;
+
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.history .path span {
+    margin: 5px;
+}
+
+.product__wrapper {
+    width: 58%;
+}
+
+.product__image {
+    padding: 0 17px;
+    padding-bottom: 8px;
+
+    width: 100%;
+    height: 391px;
+
+    background: url('../images/fullsize_products/helmet.png') no-repeat bottom;
+    border-radius: 19px;
+}
+
+.product__image .arrow {
+    width: 29px;
+    height: 29px;
+
+    background-color: #fff;
+    border-radius: 50%;
+
+    color: #000;
+}
+
+.pictures__indicators {
+    align-self: flex-end;
+}
+
+.pictures__indicators .indicator {
+    width: 5px;
+    height: 5px;
+
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.pictures__indicators .indicator:not(:first-of-type) {
+    margin-left: 10px;
+}
+
+.pictures__indicators .indicator.active {
+    background-color: transparent;
+}
+
+.product__fullinfo {
+    position: relative;
+
+    margin-top: 35px;
+    padding: 18px 31px;
+    padding-bottom: 28px;
+}
+
+.product__fullinfo>.favourite {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+
+.product__fullinfo>.product__date {
+    margin-bottom: 17px;
+
+    font-size: 16px;
+    font-style: italic;
+
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.product__fullinfo>.product__title {
+    margin-bottom: 25px;
+
+    font-size: 30px;
+}
+
+.product__fullinfo>.buttons {
+    margin-bottom: 28px;
+}
+
+.product__fullinfo>.buttons button {
+    margin: 0 21px;
+}
+
+.product__fullinfo>.buttons button:not(:last-of-type) {
+    position: relative;
+}
+
+.product__fullinfo>.buttons button:not(:last-of-type)::after {
+    content: '';
+    position: absolute;
+    top: 15%;
+    bottom: 15%;
+    right: -23.5px;
+
+    width: 1px;
+
+
+    background-color: #000;
+}
+
+.product__fullinfo>.buttons button:first-of-type {
+    margin-left: 0;
+}
+
+.product__fullinfo>.buttons button:last-of-type {
+    margin-right: 0;
+}
+
+.product__fullinfo>.product__description {
+    padding-top: 17px;
+
+    width: 74%;
+
+    border-top: 1px solid rgba(0, 0, 0, .11);
+    font-size: 16px;
+}
+
+.product__fullinfo>.product__description .title {
+    font-style: italic;
+
+    color: rgba(0, 0, 0, 0.4)
+}
+
+.product__fullinfo>.product__description .content {
+    margin-top: 17px;
+    color: rgba(0, 0, 0, .7);
+}
+
+.border_light {
+    border: 1px solid rgba(0, 0, 0, .04);
+    border-radius: 18px;
+}
+
+.user__block {
+    width: 37%;
+}
+
+.user__block>div:not(:first-of-type) {
+    margin-top: 25px;
+}
+
+.user_info {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+
+    padding-top: 32px;
+    padding-bottom: 28px;
+}
+
+.block__title {
+    margin-bottom: 18px;
+
+    font-size: 16px;
+    font-style: italic;
+
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.user_info .block__title {
+    position: absolute;
+    top: 24px;
+    left: 27px;
+
+    margin: 0;
+
+    color: #000;
+}
+
+.user__avatar {
+    width: 123px;
+    height: 123px;
+
+    background: url('../images/avatars/yurchyk.png') no-repeat center;
+    border-radius: 50%;
+}
+
+.user__name {
+    margin-top: 19px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.user__profile {
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+.user__region {
+    margin-top: 22px;
+
+    font-size: 17px;
+}
+
+.user__region .partition {
+    margin: 0 25px;
+
+    width: 1px;
+    height: 32px;
+
+    background-color: #000;
+}
+
+.user__contacts {
+    padding: 24px 27px 31px;
+}
+
+.user__contacts .contact__name {
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.user__contacts:not(:first-of-type) .contact__name {
+    margin-top: 14px;
+}
+
+.user__contacts .contact__content {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.user__location {
+    position: relative;
+    padding: 24px 18px 118px;
+}
+
+.user__location .user__address {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.user__location .user__address_description {
+    font-size: 14px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.user__location .map {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+
+    width: 142px;
+    height: 100px;
+
+    background: url('../images/location.png') no-repeat center;
+}
+
+.recommended__title {
+    margin: 62px 0 48px;
+    font-size: 45px;
+
+    text-transform: uppercase;
+}
+
+.recommended_products {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 50px;
 }
