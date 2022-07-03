@@ -356,6 +356,20 @@
     border-radius: 13px;
 }
 
+.category__field>input {
+    background: transparent;
+    border: none;
+}
+
+.category__field>i {
+    color: rgba(0, 0, 0, 0.4)
+}
+
+.category__field>input:focus {
+    border: none;
+    outline: none;
+}
+
 .button {
     cursor: pointer;
 
@@ -637,6 +651,11 @@
 
 .user__avatar.mariya {
     background-image: url('../images/avatars/maria.png');
+}
+
+.user__avatar.mykola {
+    background-image: url('../images/avatars/mykola.png');
+    background-position: left;
 }
 
 .user__name {
@@ -965,4 +984,55 @@ main.profile {
 
 .volunter__social .social .social__link>input {
     width: 100%;
+}
+
+.volunters {
+    margin-top: 50px;
+}
+
+.volunters .volunters__item {
+    width: 100%;
+}
+
+.volunters .volunters__item:not(:first-of-type) {
+    margin-top: 34px;
+}
+
+.volunters .volunter__info {
+    padding-top: 20px;
+    padding-bottom: 17px;
+
+    width: 43%;
+}
+
+.volunters .volunter__info .user__avatar {
+    width: 111px;
+    height: 111px;
+
+    margin-top: 9px;
+}
+
+.volunters .volunter__info .user__name {
+    margin-top: 9px;
+}
+
+.volunters .volunter__info .user__region {
+    margin-top: 19px;
+}
+
+.volunters .volunters__item>.partition {
+    width: 3px;
+    height: 275px;
+
+    background-color: #F1F1F1;
+}
+
+.volunters .works {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.volunters .pagination {
+    margin-top: 60px;
 }

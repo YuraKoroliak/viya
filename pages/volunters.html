@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../styles/main.css">
+
+    <title>Viya</title>
+
+    <script src="https://kit.fontawesome.com/5953287ccc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header d-flex justify-content-between align-items-center">
+            <div class="header__info d-flex align-items-center">
+                <a href="../index.html" class="header__logo d-flex align-items-center">
+                    <img src="../images/ua_flag.png" class="logo__img">
+                    <div class="logo__content">
+                        VIYA
+                    </div>
+                </a>
+
+                <label class="search d-flex align-items-center" for="search">
+                    <input type="text" class="search__field" placeholder="Пошук по товарам" id="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+            </div>
+
+            <div class="header__info d-flex align-items-center">
+                <div class="buttons_toggle d-flex align-items-center">
+                    <button type="button" class="buttons_toggle__item active">Волонтери</button><button type="button"
+                        class="buttons_toggle__item">Головна</button>
+                </div>
+
+                <div class="profile d-flex align-items-center">
+                    <button type="button" class="profile__button d-flex justify-content-center align-items-center">
+                        <i class=" fa-regular fa-user"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <main class="d-flex justify-content-between">
+            <nav class="navigation">
+                <a class="navigation__item d-flex justify-content-between align-items-center shadow">
+                    Головна
+                    <img src="../images/icons/house.png" class="navigation__icon">
+                </a>
+                <a href="../pages/zsu.html"
+                    class="navigation__item d-flex justify-content-between align-items-center shadow">
+                    ЗСУ
+                    <img src="../images/icons/helmet.png" class="navigation__icon">
+                </a>
+                <a href="index.html" class="navigation__item d-flex justify-content-between align-items-center shadow">
+                    Транспорт
+                    <img src="../images/icons/car.png" class="navigation__icon">
+                </a>
+                <a href="index.html" class="navigation__item d-flex justify-content-between align-items-center shadow">
+                    Намети
+                    <img src="../images/icons/tent.png" class="navigation__icon">
+                </a>
+                <a href="index.html" class="navigation__item d-flex justify-content-between align-items-center shadow">
+                    Їжа
+                    <img src="../images/icons/soup.png" class="navigation__icon">
+                </a>
+                <a href="index.html" class="navigation__item d-flex justify-content-between align-items-center shadow">
+                    Медикаменти
+                    <img src="./images/icons/pill.png" class="navigation__icon">
+                </a>
+                <a href="index.html" class="navigation__item d-flex justify-content-between align-items-center shadow">
+                    Техніка
+                    <img src="../images/icons/notebook.png" class="navigation__icon">
+                </a>
+            </nav>
+
+            <div class="page__content">
+                <h2 class="page__title">Головна</h2>
+
+                <p class="page__filter">оберіть фільтри</p>
+
+                <div class="filters d-flex align-items-center">
+                    <label for="category__field">
+                        <input type="text" class="category__field" id="category__field"
+                            placeholder="№ військової частини">
+                    </label>
+
+                    <label for="city__field" class="category__field">
+                        <input type="text" id="city__field" placeholder="місто">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </label>
+
+                    <button type="button" class="button button_dark">Очистити</button>
+                </div>
+
+                <div class="volunters">
+                    <div class="volunters__item d-flex justify-content-between">
+                        <div class="volunter__info border_light shadow">
+                            <div class="block__title">
+                                Волонтер
+                            </div>
+                            <div class="user__avatar mariya"></div>
+                            <div class="user__name">Стецьків Марія</div>
+                            <div class="user__profile">Профіль: медецина</div>
+
+                            <div class="user__region d-flex align-items-center">
+                                <div class="location">
+                                    <i class="fa-solid fa-location-dot"></i> М. Львів
+                                </div>
+                                <div class="partition"></div>
+                                <div class="brigade d-flex justify-content-evenly align-items-center">
+                                    <i class="fa-solid fa-circle-check" style="color: #65D154"></i> 35
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="partition"></div>
+
+                        <div class="works">
+                            <a class="products__item medicine d-flex justify-content-between">
+                                <div class="favourite d-flex justify-content-center align-items-center">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+
+                                <div class="product__info">
+                                    <p class="product__title">
+                                        Короляк Юрік
+                                    </p>
+                                    <p class="product__description">
+                                        5 аптечок на 33 бригаду
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="products__item empty d-flex justify-content-center shadow_drop">
+                                <div class="show_more">Показати більше</div>
+                                <span>+3 товари</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="volunters__item d-flex justify-content-between">
+                        <div class="volunter__info border_light shadow">
+                            <div class="block__title">
+                                Волонтер
+                            </div>
+                            <div class="user__avatar mykola"></div>
+                            <div class="user__name">Бесага Микола</div>
+                            <div class="user__profile">Профіль: тактик</div>
+
+                            <div class="user__region d-flex align-items-center">
+                                <div class="location">
+                                    <i class="fa-solid fa-location-dot"></i> М. Львів
+                                </div>
+                                <div class="partition"></div>
+                                <div class="brigade d-flex justify-content-evenly align-items-center">
+                                    <i class="fa-solid fa-circle-check" style="color: #65D154"></i> 35
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="partition"></div>
+
+                        <div class="works">
+                            <a class="products__item backpack d-flex justify-content-between">
+                                <div class="favourite d-flex justify-content-center align-items-center">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+
+                                <div class="product__info">
+                                    <p class="product__title">
+                                        Короляк Юрік
+                                    </p>
+                                    <p class="product__description">
+                                        5 аптечок на 33 бригаду
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="products__item empty d-flex justify-content-center shadow_drop">
+                                <div class="show_more">Показати більше</div>
+                                <span>+3 товари</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="volunters__item d-flex justify-content-between">
+                        <div class="volunter__info border_light shadow">
+                            <div class="block__title">
+                                Волонтер
+                            </div>
+                            <div class="user__avatar mariya"></div>
+                            <div class="user__name">Стецьків Марія</div>
+                            <div class="user__profile">Профіль: медецина</div>
+
+                            <div class="user__region d-flex align-items-center">
+                                <div class="location">
+                                    <i class="fa-solid fa-location-dot"></i> М. Львів
+                                </div>
+                                <div class="partition"></div>
+                                <div class="brigade d-flex justify-content-evenly align-items-center">
+                                    <i class="fa-solid fa-circle-check" style="color: #65D154"></i> 35
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="partition"></div>
+
+                        <div class="works">
+                            <a class="products__item helmet_2 d-flex justify-content-between">
+                                <div class="favourite d-flex justify-content-center align-items-center">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+
+                                <div class="product__info">
+                                    <p class="product__title">
+                                        Короляк Юрік
+                                    </p>
+                                    <p class="product__description">
+                                        5 аптечок на 33 бригаду
+                                    </p>
+                                </div>
+                            </a>
+                            <a class="products__item empty d-flex justify-content-center shadow_drop">
+                                <div class="show_more">Показати більше</div>
+                                <span>+3 товари</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="volunters__item d-flex justify-content-between">
+                        <div class="volunter__info border_light shadow">
+                            <div class="block__title">
+                                Волонтер
+                            </div>
+                            <div class="user__avatar mykola"></div>
+                            <div class="user__name">Бесага Микола</div>
+                            <div class="user__profile">Профіль: тактик</div>
+
+                            <div class="user__region d-flex align-items-center">
+                                <div class="location">
+                                    <i class="fa-solid fa-location-dot"></i> М. Львів
+                                </div>
+                                <div class="partition"></div>
+                                <div class="brigade d-flex justify-content-evenly align-items-center">
+                                    <i class="fa-solid fa-circle-check" style="color: #65D154"></i> 35
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="partition"></div>
+
+                        <div class="works">
+                            <a class="products__item armor d-flex justify-content-between">
+                                <div class="favourite d-flex justify-content-center align-items-center">
+                                    <i class="fa-regular fa-heart"></i>
+                                </div>
+
+                                <div class="product__info">
+                                    <p class="product__title">
+                                        Короляк Юрік
+                                    </p>
+                                    <p class="product__description">
+                                        5 аптечок на 33 бригаду
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pagination d-flex justify-content-between align-items-center">
+                        <div
+                            class="arrow_left pagination__item active d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-angle-left"></i>
+                        </div>
+                        <div class="pages d-flex">
+                            <div
+                                class="page__item pagination__item active d-flex justify-content-center align-items-center">
+                                1
+                            </div>
+                            <div class="page__item pagination__item d-flex justify-content-center align-items-center">
+                                2
+                            </div>
+                            <div class="page__item pagination__item d-flex justify-content-center align-items-center">
+                                3
+                            </div>
+                            <div class="page__item pagination__item d-flex justify-content-center align-items-center">
+                                4
+                            </div>
+                        </div>
+                        <div
+                            class="arrow_right pagination__item active d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="../index.html" class="header__logo dark d-flex align-items-center">
+                <img src="../images/ua_flag.png" class="logo__img">
+                <div class="logo__content">
+                    VIYA
+                </div>
+            </a>
+
+            <div class="footer__info">
+                <p>Умови користування сайтом</p>
+                <p>Як розмістити оголошення</p>
+                <p>Як допомогти?</p>
+            </div>
+            <div class="footer__info">
+                <p>Політика конфіденціальності</p>
+                <p>Правила безпеки</p>
+                <p>Мій профіль</p>
+            </div>
+
+            <button type="button"
+                class="button button_light d-flex justify-content-between align-items-center">Допомогти <i
+                    class="fa-solid fa-phone"></i></button>
+        </div>
+        <div class="copyright">
+            © VIYA. ALL RIGHT RESERVED.
+        </div>
+    </footer>
+
+</body>
+
+</html>
