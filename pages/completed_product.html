@@ -17,7 +17,7 @@
 
     <div class="container">
         <header class="header d-flex justify-content-between align-items-center">
-            <div class="header__info d-flex align-items-center">
+            <div class="header__info d-flex align-items-centger">
                 <a href="../index.html" class="header__logo d-flex align-items-center">
                     <img src="../images/ua_flag.png" class="logo__img">
                     <div class="logo__content">
@@ -44,13 +44,20 @@
                 </div>
             </div>
         </header>
-
-        <main>
+    </div>
+    <main>
+        <div class="container">
             <section class="history d-flex align-items-center">
                 <button type="button" class="button button_dark">Назад</button>
                 <p class="path">головна <span>></span> ЗСУ <span>></span> шоломи</p>
             </section>
+        </div>
 
+        <div class="completed d-flex justify-content-center align-items-center">
+            виконане замовлення! <i class="fa-regular fa-circle-check"></i>
+        </div>
+
+        <div class="container">
             <section class="d-flex justify-content-between">
                 <div class="product__wrapper">
                     <div class="product__image d-flex justify-content-between align-items-center shadow_drop">
@@ -111,107 +118,54 @@
                                 Бригада: 65
                             </div>
                         </div>
+
+                        <div class="user__response">
+                            <div class="block__title">
+                                Відгук від автора
+                            </div>
+                            <div class="response">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,lpa qui officia
+                                deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+
+                        <div class="volunters__points">
+                            <div class="block__title">
+                                Якість роботи волонтера
+                            </div>
+                            <div class="points">
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star active"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
                     </div>
 
-                    <div class="user__contacts border_light shadow">
+                    <div class="volunter__info border_light shadow">
                         <div class="block__title">
-                            Контактна інформація
+                            Волонтер
                         </div>
-                        <div class="contact">
-                            <div class="contact__name">телефон</div>
-                            <div class="contact__content">+380 (96) 611 90 70</div>
-                        </div>
-                        <div class="contact">
-                            <div class="contact__name">email</div>
-                            <div class="contact__content">viya2022@gmail.com</div>
-                        </div>
-                    </div>
+                        <div class="user__avatar mariya"></div>
+                        <div class="user__name">Стецьків Марія</div>
+                        <div class="user__profile">Профіль: медецина</div>
 
-                    <div class="user__location border_light shadow">
-                        <div class="block__title">
-                            локація
+                        <div class="user__region d-flex align-items-center">
+                            <div class="location">
+                                <i class="fa-solid fa-location-dot"></i> М. Львів
+                            </div>
+                            <div class="partition"></div>
+                            <div class="brigade">
+                                <i class="fa-solid fa-circle-check" style="color: #65D154"></i> 35
+                            </div>
                         </div>
-
-                        <div class="user__address">
-                            Вул. Замарстинівська 83А
-                        </div>
-                        <div class="user__address_description">
-                            Ценр допомоги
-                        </div>
-
-                        <div class="map"></div>
                     </div>
                 </div>
             </section>
-
-            <section>
-                <h2 class="recommended__title">оголошення від автора</h2>
-                <div class="recommended_products">
-                    <a class="products__item armor_2 d-flex justify-content-between">
-                        <div class="favourite d-flex justify-content-center align-items-center">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-
-                        <div class="product__info">
-                            <p class="product__title">
-                                Короляк Юрік
-                            </p>
-                            <p class="product__description">
-                                20 шоломів на 65 бригаду
-                            </p>
-                        </div>
-                    </a>
-                    <a class="products__item helmet_2 d-flex justify-content-between">
-                        <div class="favourite d-flex justify-content-center align-items-center">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-
-                        <div class="product__info">
-                            <p class="product__title">
-                                Короляк Юрік
-                            </p>
-                            <p class="product__description">
-                                20 шоломів на 65 бригаду
-                            </p>
-                        </div>
-                    </a>
-                    <a class="products__item helmet d-flex justify-content-between">
-                        <div class="favourite d-flex justify-content-center align-items-center">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-
-                        <div class="product__info">
-                            <p class="product__title">
-                                Короляк Юрік
-                            </p>
-                            <p class="product__description">
-                                5 аптечок на 33 бригаду
-                            </p>
-                        </div>
-                    </a>
-                    <a class="products__item armor d-flex justify-content-between">
-                        <div class="favourite d-flex justify-content-center align-items-center">
-                            <i class="fa-regular fa-heart"></i>
-                        </div>
-
-                        <div class="product__info">
-                            <p class="product__title">
-                                Короляк Юрік
-                            </p>
-                            <p class="product__description">
-                                20 шоломів на 65 бригаду
-                            </p>
-                        </div>
-                    </a>
-                    <a class="products__item empty d-flex justify-content-center shadow_drop">
-                        <div class="show_more">Показати більше</div>
-                        <span>+3 товари</span>
-                    </a>
-                </div>
-            </section>
-        </main>
-
-    </div>
+        </div>
+    </main>
 
     <footer class="footer">
         <div class="container d-flex justify-content-between align-items-center">

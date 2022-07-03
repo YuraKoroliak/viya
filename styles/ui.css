@@ -534,7 +534,8 @@
     margin-top: 25px;
 }
 
-.user_info {
+.user_info,
+.volunter__info {
     position: relative;
 
     display: flex;
@@ -543,8 +544,10 @@
 
     width: 100%;
 
+    padding: 0 25px;
     padding-top: 32px;
     padding-bottom: 28px;
+
 }
 
 .block__title {
@@ -556,7 +559,8 @@
     color: rgba(0, 0, 0, 0.4);
 }
 
-.user_info .block__title {
+.user_info>.block__title,
+.volunter__info>.block__title {
     position: absolute;
     top: 24px;
     left: 27px;
@@ -570,8 +574,16 @@
     width: 123px;
     height: 123px;
 
-    background: url('../images/avatars/yurchyk.png') no-repeat center;
+    background: no-repeat center;
     border-radius: 50%;
+}
+
+.user__avatar.yurchyk{
+    background-image: url('../images/avatars/yurchyk.png') ;
+}
+
+.user__avatar.mariya{
+    background-image: url('../images/avatars/maria.png');
 }
 
 .user__name {
@@ -656,4 +668,41 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 50px;
+}
+
+.completed {
+    width: 100%;
+    height: 96px;
+
+    margin-bottom: 48px;
+
+    font-size: 45px;
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    background-color: var(--light-green);
+}
+
+.completed i {
+    margin-left: 33px;
+
+    font-size: 48px;
+}
+
+.user__response,
+.volunters__points {
+    width: 100%;
+    margin-top: 26px;
+    padding-top: 15px;
+
+    border-top: 1px solid rgba(0, 0, 0, .11);
+}
+
+.volunters__points .points i {
+    color: #D9D9D9;
+}
+
+.volunters__points .points i.active {
+    color: #F0D470;
 }
