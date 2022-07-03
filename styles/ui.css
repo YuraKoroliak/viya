@@ -1036,3 +1036,103 @@ main.profile {
 .volunters .pagination {
     margin-top: 60px;
 }
+
+.advert .advert__title {
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.advert .form-block {
+    padding: 29px;
+    min-height: 270px;
+}
+
+.advert .form-block:last-of-type {
+    min-height: auto;
+}
+
+.advert .form-block {
+    margin-top: 29px;
+}
+
+.form-block>.form-field {
+    flex-direction: column;
+    width: 60%;
+}
+
+.form-block>.form-field {
+    margin-bottom: 14px;
+}
+
+.form-block>.form-field>input {
+    margin-top: 10px;
+    padding: 15px;
+
+    width: 100%;
+
+    background-color: var(--light-grey);
+    border-radius: 14px;
+
+    border: none;
+}
+
+.form-block .photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+
+    margin-top: 10px;
+}
+
+.form-block .photos .photos__item,
+.form-block .photos .add_new_photo {
+    width: 147px;
+    height: 81px;
+}
+
+.form-block .photos .add_new_photo {
+    background-color: var(--light-green);
+    border-radius: 13px;
+    color: rgba(0, 0, 0, .5);
+}
+
+.form-block .photos .add_new_photo span {
+    font-size: 13px;
+    font-style: italic;
+}
+
+.form-block .photos .photos__item {
+    background-color: var(--light-grey);
+    border-radius: 13px;
+}
+
+.form-block .photos .photos__item i {
+    font-size: 28px;
+    color: #B7B7B7;
+}
+
+.form-block .advert__description {
+    resize: none;
+
+    min-height: 180px;
+
+    margin-top: 10px;
+    padding: 15px;
+
+    background-color: var(--light-grey);
+    border-radius: 13px;
+
+    border: none;
+}
+
+.form-block .button {
+    background-color: var(--light-grey);
+    color: rgba(0, 0, 0, 0.4);
+    border: none;
+    font-weight: bold;
+}
+
+.form-block .button.button_green {
+    background-color: var(--light-green);
+    color: #000;
+}

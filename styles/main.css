@@ -19,11 +19,13 @@ body {
     font-family: sans-serif;
 }
 
-input[type=text]::placeholder {
+input[type=text]::placeholder,
+textarea::placeholder {
     font-style: italic;
 }
 
-input:focus {
+input:focus,
+textarea:focus {
     border: none;
     outline: none;
 }
