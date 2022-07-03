@@ -879,6 +879,31 @@ main.profile {
     gap: 50px;
 }
 
+.user__works .works .new_product {
+    cursor: pointer;
+
+    flex-direction: column;
+
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    border: 1px solid black;
+    border-radius: 30px;
+
+    background-color: #000;
+
+    font-size: 25px;
+
+    text-align: center;
+    color: #fff;
+}
+
+.user__works .works .new_product .plus {
+    font-size: 55px;
+}
+
 .profile .user__works .work__title {
     margin-bottom: 25px;
 
