@@ -47,17 +47,32 @@
 
         <main class="profile d-flex justify-content-between">
             <section class="user__info">
-                <div class="volunter__info border_light shadow">
+                <div class="volunter__info edit border_light shadow">
+                    <button type="submit" class="button button_dark d-flex justify-content-center align-items-center">
+                        Підтвердити зміни
+                        <i class="fa-regular fa-circle-check" style="font-size: 19px;"></i>
+                    </button>
+
                     <div class="block__title">
                         Волонтер
                     </div>
-                    <div class="user__avatar mariya"></div>
-                    <div class="user__name">Стецьків Марія</div>
-                    <div class="user__profile">Профіль: медецина</div>
+                    <div class="user__avatar edit mariya">
+                        <div class="edit d-flex justify-content-center align-items-center">
+                            <i class="fa-solid fa-camera"></i>
+                        </div>
+                    </div>
+                    <div class="user__name">
+                        <label for="user_name">ім'я</label>
+                        <input type="text" class="edit-field" value="Стецьків Марія" id="user_name">
+                    </div>
+                    <div class="user__profile">
+                        <label for="user_profile">профіль</label>
+                        <input type="text" class="edit-field" value="Медицина" id="user_profile">
+                    </div>
 
                     <div class="user__region d-flex align-items-center">
                         <div class="location">
-                            <i class="fa-solid fa-location-dot"></i> М. Львів
+                            <input type="text" placeholder="місто">
                         </div>
                         <div class="partition"></div>
                         <div class="brigade d-flex justify-content-evenly align-items-center">
@@ -65,36 +80,38 @@
                         </div>
                     </div>
                 </div>
-                <div class="user__contacts border_light shadow">
+                <div class="user__contacts edit border_light shadow">
                     <div class="block__title">
                         Контактна інформація
                     </div>
                     <div class="contact">
-                        <div class="contact__name">телефон</div>
-                        <div class="contact__content">+380 (96) 611 90 70</div>
+                        <label for="phone">телефон</label>
+                        <input type="text" value="+380 (96) 611 90 70" id="phone">
                     </div>
                     <div class="contact">
-                        <div class="contact__name">email</div>
-                        <div class="contact__content">viya2022@gmail.com</div>
+                        <label for="email">email</label>
+                        <input type="text" value="viya2022@gmail.com" id="email">
                     </div>
                     <div class="contact">
-                        <div class="contact__name">Адреса</div>
-                        <div class="contact__content">
-                            Вул. Замарстинівська 83А <br>
-                            Ценр допомоги
-                        </div>
+                        <label for="address">адрес</label>
+                        <input type="text" value="Вул. Замарстинівська 83А" id="address">
                     </div>
                 </div>
-                <div class="volunter__tags border_light shadow">
+                <div class="volunter__tags edit border_light shadow">
                     <div class="block__title">
                         Тегі
                     </div>
                     <div class="tags">
-                        <button type="button" class="button tags__item">Таблетки</button>
-                        <button type="button" class="button tags__item">Перев'язки</button>
-                        <button type="button" class="button tags__item">Аптечки</button>
-                        <button type="button" class="button tags__item">Аптечки</button>
-                        <button type="button" class="button tags__item">Таблетки</button>
+                        <button type="button" class="button tags__item">Таблетки <i
+                                class="fa-solid fa-xmark"></i></button>
+                        <button type="button" class="button tags__item">Перев'язки <i
+                                class="fa-solid fa-xmark"></i></button>
+                        <button type="button" class="button tags__item">Аптечки <i
+                                class="fa-solid fa-xmark"></i></button>
+                        <button type="button" class="button tags__item">Аптечки <i
+                                class="fa-solid fa-xmark"></i></button>
+                        <button type="button" class="button tags__item">Таблетки <i
+                                class="fa-solid fa-xmark"></i></button>
                     </div>
                 </div>
                 <div class="volunter__about_myself border_light shadow">
@@ -106,6 +123,35 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam,lpa qui officia deserunt mollit anim id
                         est laborum.
+                    </div>
+                </div>
+                <div class="volunter__social border_light shadow">
+                    <div class="block__title">
+                        Соцмережі
+                    </div>
+                    <div class="social d-flex justify-content-between align-items-center">
+                        <div class="social__icon">
+                            <i class="fa-brands fa-facebook"></i>
+                        </div>
+                        <div class="social__link">
+                            <input type="text" placeholder="посилання">
+                        </div>
+                    </div>
+                    <div class="social d-flex justify-content-between align-items-center">
+                        <div class="social__icon square d-flex justify-content-center align-items-center">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div class="social__link">
+                            <input type="text" placeholder="посилання">
+                        </div>
+                    </div>
+                    <div class="social d-flex justify-content-between align-items-center">
+                        <div class="social__icon">
+                            <i class="fa-brands fa-telegram"></i>
+                        </div>
+                        <div class="social__link">
+                            <input type="text" placeholder="посилання">
+                        </div>
                     </div>
                 </div>
             </section>

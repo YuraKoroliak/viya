@@ -553,6 +553,31 @@
 
 }
 
+.volunter__info>button[type=submit] {
+    position: absolute;
+    top: -90px;
+    left: 0;
+
+    width: 70% !important;
+}
+
+.volunter__info.edit {
+    align-items: flex-start;
+}
+
+.volunter__info.edit .user__avatar {
+    align-self: center;
+}
+
+.volunter__info.edit>div>label,
+.user__contacts.edit .contact>label {
+    margin-bottom: 7px;
+    margin-left: 15px;
+    font-size: 13px;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.4);
+}
+
 .block__title {
     margin-bottom: 18px;
 
@@ -574,11 +599,36 @@
 }
 
 .user__avatar {
+    position: relative;
+
     width: 123px;
     height: 123px;
 
     background: no-repeat center;
     border-radius: 50%;
+
+    overflow: hidden;
+}
+
+.user__avatar>.edit {
+    display: none;
+}
+
+.user__avatar.edit>.edit {
+    display: flex;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+}
+
+.user__avatar.edit>.edit i {
+    font-size: 38px;
 }
 
 .user__avatar.yurchyk {
@@ -593,6 +643,32 @@
     margin-top: 19px;
     font-size: 19px;
     font-weight: bold;
+}
+
+.volunter__info.edit>div:not(.user__avatar) {
+    width: 100%;
+}
+
+.volunter__info.edit .user__region .partition {
+    margin: 0 11px;
+}
+
+.volunter__info.edit .user__region .location,
+.volunter__info.edit .user__region .brigade {
+    width: 100%;
+}
+
+.volunter__info.edit .user__region .location>input {
+    padding: 13px;
+    background-color: var(--light-grey);
+    border-radius: 13px;
+    border: none;
+}
+
+.volunter__info.edit .user__region .brigade {
+    padding: 13px;
+    background-color: var(--light-grey);
+    border-radius: 13px;
 }
 
 .user__profile {
@@ -710,7 +786,7 @@
     color: #F0D470;
 }
 
-.profile {
+main.profile {
     margin-top: 112px;
 }
 
@@ -726,6 +802,23 @@
 .profile .user__info .block__title {
     font-style: normal;
     color: #000;
+}
+
+.profile .user__info input.edit-field,
+.user__contacts.edit .contact>input,
+.volunter__social .social .social__link>input {
+    padding: 13px;
+
+    width: 100%;
+
+    background-color: var(--light-grey);
+    border-radius: 13px;
+
+    border: none;
+}
+
+.user__contacts.edit .contact:not(:first-of-type) {
+    margin-top: 7px;
 }
 
 .profile .user__contacts .contact__content {
@@ -744,6 +837,14 @@
 
 .profile .volunter__tags .tags .tags__item {
     margin-top: 3px;
+}
+
+.profile .volunter__tags.edit .tags .tags__item {
+    padding: 6px 12px;
+}
+
+.profile .volunter__tags.edit .tags .tags__item i {
+    padding-left: 3px;
 }
 
 .profile .volunter__tags .tags .tags__item:not(:nth-of-type(3n+3)) {
@@ -799,4 +900,38 @@
 .profile .user__works .work.done .done i {
     font-size: 52px;
     color: #fff;
+}
+
+.volunter__social {
+    padding: 21px;
+}
+
+.volunter__social .social:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+
+.volunter__social .social .social__icon {
+    font-size: 40px;
+
+    color: #B5F562;
+}
+
+.volunter__social .social .social__icon.square {
+    min-width: 40px;
+    height: 40px;
+
+    font-size: 24px;
+
+    background-color: #B5F562;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.volunter__social .social .social__link {
+    width: 100%;
+    margin-left: 15px;
+}
+
+.volunter__social .social .social__link>input {
+    width: 100%;
 }
