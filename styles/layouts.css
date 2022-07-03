@@ -18,6 +18,10 @@
     color: #000;
 }
 
+.header__logo.dark {
+    color: #fff;
+}
+
 .header__logo .logo__img {
     height: 61px;
     width: 61px;
@@ -55,4 +59,35 @@
 
 section:not(:first-of-type) {
     margin-top: 54px;
+}
+
+footer.footer {
+    margin-top: 126px;
+    padding: 55px 0 8px;
+
+    background-color: #000;
+
+    color: #fff;
+}
+
+.footer__info p:not(:first-of-type) {
+    margin-top: 10px;
+}
+
+.button {
+    padding: 12px 21px;
+    border-radius: 13px;
+
+    font-weight: bold;
+}
+
+.button i {
+    padding-left: 13px;
+}
+
+.copyright {
+    margin-top: 60px;
+
+    font-size: 10px;
+    text-align: center;
 }
