@@ -86,7 +86,7 @@
 .navigation__item {
     cursor: pointer;
 
-    padding: 10px 20px;
+    padding: 10px 20px 10px 16px;
 
     font-size: 16px;
     font-weight: bold;
@@ -104,6 +104,197 @@
 
 .navigation__item:not(:first-of-type) {
     margin-top: 15px;
+}
+
+.navigation__item.active {
+    padding: 20px 30px 20px 16px;
+
+    background-color: var(--light-green);
+}
+
+.navigation__item.active .navigation__icon {
+    height: 38px;
+    width: 38px;
+}
+
+.page__content {
+    width: 75%;
+}
+
+.page__content .page__title {
+    margin-bottom: 15px;
+
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.page__content .page__filter {
+    margin-bottom: 8px;
+
+    font-size: 15px;
+    font-style: italic;
+
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.filters__item {
+    padding: 13px 26px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    background: transparent;
+
+    border: 2px solid rgba(0, 0, 0, .1);
+    border-radius: 13px;
+}
+
+.filters__item:not(:last-of-type) {
+    margin-right: 15px;
+}
+
+
+.products {
+    margin-top: 72px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+}
+
+.products__item {
+    position: relative;
+    flex-direction: column;
+
+    padding: 17px 15px 19px;
+
+    height: 272px;
+
+    background: no-repeat center;
+
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.products__item>* {
+    position: relative;
+    z-index: 1;
+}
+
+.products__item:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    height: 35%;
+    width: 100%;
+
+    background: linear-gradient(rgba(0, 0, 0, .6), transparent);
+    z-index: 0;
+}
+
+.products__item:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    height: 35%;
+    width: 100%;
+
+    background: linear-gradient(transparent, #000);
+    z-index: 0;
+}
+
+.products__item.helmet {
+    background-image: url('../images/products/helmet.png');
+}
+
+.products__item.helmet_2 {
+    background-image: url('../images/products/helmet_2.png');
+}
+
+.products__item.armor {
+    background-image: url('../images/products/armor.png');
+    background-position: bottom;
+}
+
+.products__item.armor_2 {
+    background-image: url('../images/products/armor_2.png');
+    background-position: bottom;
+}
+
+.products__item.medicine {
+    background-image: url('../images/products/medicine.png');
+}
+
+.products__item.backpack {
+    background-image: url('../images/products/backpack.png');
+}
+
+
+.favourite {
+    cursor: pointer;
+
+    width: 20px;
+    height: 20px;
+
+    background-color: #fff;
+    border-radius: 50%;
+
+    text-align: center;
+}
+
+.favourite i {
+    font-size: 14px;
+}
+
+.product__info {
+    width: 70%;
+    color: #fff;
+}
+
+.product__title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.product__description {
+    font-size: 13px;
+}
+
+
+.pagination {
+    margin-top: 32px;
+    padding-top: 17px;
+
+    border-top: 1px solid rgba(0, 0, 0, .11);
+}
+
+.pagination__item {
+    cursor: pointer;
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 9px;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.pagination__item:not(:first-of-type) {
+    margin-left: 5px;
+}
+
+.pagination__item.active {
+    border: none;
+
+    background-color: #000;
+    color: #fff;
 }
 
 .shadow {
