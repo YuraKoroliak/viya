@@ -365,6 +365,8 @@
 
     border-radius: 13px;
 
+    border: 1px solid #7d7d7d;
+
     background-color: #fff;
     color: #000;
 }
@@ -530,7 +532,8 @@
     width: 37%;
 }
 
-.user__block>div:not(:first-of-type) {
+.user__block>div:not(:first-of-type),
+.user__info>div:not(:first-of-type) {
     margin-top: 25px;
 }
 
@@ -578,11 +581,11 @@
     border-radius: 50%;
 }
 
-.user__avatar.yurchyk{
-    background-image: url('../images/avatars/yurchyk.png') ;
+.user__avatar.yurchyk {
+    background-image: url('../images/avatars/yurchyk.png');
 }
 
-.user__avatar.mariya{
+.user__avatar.mariya {
     background-image: url('../images/avatars/maria.png');
 }
 
@@ -705,4 +708,90 @@
 
 .volunters__points .points i.active {
     color: #F0D470;
+}
+
+.profile {
+    margin-top: 112px;
+}
+
+.profile .user__info {
+    width: 33.3%;
+}
+
+.profile .user__info .block__title {
+    font-style: normal;
+    color: #000;
+}
+
+.profile .user__contacts .contact__content {
+    text-decoration: none;
+}
+
+.profile .volunter__tags {
+    padding: 21px;
+    padding-bottom: 28px;
+}
+
+.profile .volunter__tags .tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.profile .volunter__tags .tags .tags__item {
+    margin-top: 3px;
+}
+
+.profile .volunter__tags .tags .tags__item:not(:nth-of-type(3n+3)) {
+    margin-right: 3px;
+}
+
+.profile .volunter__about_myself {
+    padding: 22px;
+    min-height: 247px;
+}
+
+.profile .volunter__about_myself .about_myself__content {
+    margin-top: 24px;
+
+    font-size: 15px;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, .5);
+}
+
+.profile .user__works {
+    margin: 0;
+    width: 58%;
+}
+
+.profile .user__works .work:not(:last-of-type) {
+    margin-bottom: 30px;
+}
+
+.user__works .works {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.profile .user__works .work__title {
+    margin-bottom: 25px;
+
+    font-size: 45px;
+
+    text-transform: uppercase;
+}
+
+.profile .user__works .work.done .done {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+
+    background-color: rgba(113, 244, 92, .5);
+}
+
+.profile .user__works .work.done .done i {
+    font-size: 52px;
+    color: #fff;
 }
